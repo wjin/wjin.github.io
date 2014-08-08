@@ -36,7 +36,7 @@ Find    | O(log n)  | O(n)
 
 # Code Practice
 
-```cpp
+{% highlight cpp %}
 #include <iostream>
 #include <vector>
 #include <climits>
@@ -260,7 +260,7 @@ int main(int argc, const char *argv[])
 
     return 0;
 }
-```
+{% endhighlight cpp %}
 
 # Reference
 * [http://epaperpress.com/sortsearch/download/skiplist.pdf](http://epaperpress.com/sortsearch/download/skiplist.pdf)
