@@ -5,12 +5,12 @@ auto: true
 rdiscount:
   extensions: [smart]
 
-title: Hawstein's Blog
+title: Eric's Blog
 author:
-  name: Hawstein
-  email: tomhawstein@gmail.com
-  github: Hawstein
+  name: Eric
+  email: wjin.cn@gmail.com
+  github: wjin
 
-production_url: http://hawstein.com
+production_url: http://wjin.github.io
 
 baseurl: /

@@ -1,5 +1,5 @@
 User-agent: *
 Disallow: /assets
 Allow: /posts
-Sitemap: http://hawstein.com/sitemap.txt
-Sitemap: http://hawstein.com/atom.xml
+Sitemap: http://wjin.github.io/sitemap.txt
+Sitemap: http://wjin.github.io/atom.xml
