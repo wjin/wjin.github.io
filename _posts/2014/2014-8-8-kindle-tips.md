@@ -10,7 +10,7 @@ And if you titled this mail with 'convert', Amazon will convert your attachment 
 
 However, it is boring to send an email every time. Here is a simple way to do that routine thing. Thanks for the interesting website [ifttt](https://ifttt.com/), a great Internet Robot. You only need to create a recipe:
 
-![image](/assets/img/2014/8/8/recipe.png))
+![image](/assets/img/2014/8/8/recipe.png)
 
 # Preparation
 * Kindle mail address
@@ -23,11 +23,11 @@ However, it is boring to send an email every time. Here is a simple way to do th
 * Login your *ifttt* account, **activate** dropbox and gmail channels. Then create a new recipe:
   * click ***create*** hyperlink
   * click ***this*** hyperlink for trigger, and choose channel dropbox. Fill your directory
-  ![image](assets/img/2014/8/8/trigger.png)
+  ![image](/assets/img/2014/8/8/trigger.png)
   * click ***that*** hyperlink for action, and choose channel gmail (my authorised mail is gmail)
      1. fill your kindle mail address
      2. fill title with 'convert'
-  ![image](assets/img/2014/8/8/action.png)
+  ![image](/assets/img/2014/8/8/action.png)
 
 # Enjoy
 * Drag your file to **Dropbox/Public/sendToKindle/**
