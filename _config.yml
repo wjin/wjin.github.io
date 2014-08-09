@@ -1,10 +1,10 @@
-markdown: rdiscount
+markdown: redcarpet
+redcarpet:
+  extensions: ["fenced_code_blocks", "tables", "highlight", "with_toc_data", "strikethrough", "underline"]
+
 pygments: true
 permalink: /posts/:title.html
 auto: true
-rdiscount:
-  extensions: [smart]
-
 title: Eric's Blog
 author:
   name: Eric
