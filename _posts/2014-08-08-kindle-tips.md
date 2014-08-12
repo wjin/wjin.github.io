@@ -1,8 +1,9 @@
 ---
 layout: post
 category: tool
-title: kindle tips
+title: Kindle Tips
 ---
+
 # Introduction
 Normally, you can use your authorised mail account to send an email with attachment to your Kindle mail address, like mykindle@kindle.com(registered at Amazon). 
 
