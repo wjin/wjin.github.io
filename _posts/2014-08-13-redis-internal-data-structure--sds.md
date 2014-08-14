@@ -66,7 +66,7 @@ sds sdsnewlen(const void *init, size_t initlen) {
 }
 ```
 
-**Note**: sdesnewlen always returns the **real string content** to user, not including sds header. Actually, so do all other APIs. So it does not break the API use.
+**Note**: sdsnewlen always returns the **real string content** to user, not including sds header. Actually, so do all other APIs. So it does not break the API use.
 
 According to above implementation, it is easy to get string length and extra available buffer size in O(1) time.
 
@@ -93,9 +93,9 @@ void sdsfree(sds s) {
 ```
 
 ## Memory Allocation Strategy
-SDS uses function **sdsMakeRoomFor** to adjust the buf size. This function accepts a second parameter addlen. It guarantees that after calling it, there is at least addlen bytes free space in the end of buf.
+SDS uses function **sdsMakeRoomFor** to adjust the buf size. This function accepts a second parameter *addlen*. It guarantees that after calling it, there is at least *addlen* bytes free space in the end of buf.
 
-It **pre-allocates** memory to reduce memory allocation times. Actually, it just simply doubles the original size when it is less than SDS_MAX_PREALLOC(1MB). This is similar to C++ vector allocation strategy when memory is not enough. This is why string append operation does not need to allocate memory every time.
+It **pre-allocates** memory to reduce memory allocation times. Actually, it just simply doubles the original size when it is less than `SDS_MAX_PREALLOC(1MB)`. This is similar to C++ vector allocation strategy when memory is not enough. This is why string append operation does not need to allocate memory every time.
 
 ```c
 sds sdsMakeRoomFor(sds s, size_t addlen) {
