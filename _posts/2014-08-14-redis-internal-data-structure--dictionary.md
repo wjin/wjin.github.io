@@ -17,6 +17,9 @@ Here is an overview of dictionary. ht[1] is always empty unless it is in the pro
 ![img](/assets/img/post/redis_dict.png)
 
 # Implementation
+
+Related files: **dict.h** and **dict.c**
+
 ## Data Structure
 To make dictionary more flexible and universal, **dictType** structure includes 6 hooks to deal with key and value. 
 
