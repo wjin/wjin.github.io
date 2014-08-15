@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Doubly Linked List"
+title: "Redis Internal Data Structure : Doubly Linked List"
 description: ""
 category: redis
 tags: []

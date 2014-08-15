@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Dictionary"
+title: "Redis Internal Data Structure : Dictionary"
 description: ""
 category: redis
 tags: []
