@@ -6,8 +6,8 @@ title: Atom Feed
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>{{ site.title }}</title>
- <link href="http://wjin.github.io/atom.xml" rel="self"/>
- <link href="http://wjin.github.io/"/>
+ <link href="http://blog.wjin.org/atom.xml" rel="self"/>
+ <link href="http://blog.wjin.org/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>{{ site.production_url }}</id>
  <author>
@@ -18,9 +18,9 @@ title: Atom Feed
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://wjin.github.io{{ post.url }}"/>
+   <link href="http://blog.wjin.org{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://wjin.github.io{{ post.id }}</id>
+   <id>http://blog.wjin.org{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
