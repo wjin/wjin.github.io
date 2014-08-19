@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "football word"
+title: "Football Word"
 description: ""
 category: sports
 tags: []
