@@ -16,7 +16,7 @@ The singleton pattern ensures a class has only one instance, and provides a glob
 
 **Multithread**
 
-Singleton is the most simplest design pattern among all patterns, however, we must be careful when dealing with multithread environment. Basically, we have following ways:
+Singleton is the simplest design pattern among all patterns, however, we must be careful when dealing with multithread environment. Basically, we have following ways:
 
 * java **synchronized** method if performance is not critical to application
 
