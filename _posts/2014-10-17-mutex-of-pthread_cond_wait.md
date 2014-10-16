@@ -101,7 +101,7 @@ So how does the C library avoid it?
 
 # Library Implementaion
 
-As I am familiar with Bionic C code Android, I will use code from there directly.
+As I am familiar with Bionic C code in Android, I will use code from there directly.
 
 ```cpp
 int pthread_cond_wait(pthread_cond_t* cond, pthread_mutex_t* mutex) {
@@ -179,5 +179,7 @@ FUTEX_WAIT
 # Conclusion
 
 Library use this mutex to guarantee that `unlock and wait` is atomic and not interrupted.
+`Atomic` here is not like what we have already known before, it uses a trick way to avoid
+`signal lost` bug.
 
 The library considers it carefully, hides the potential problem and provides easy API to use.
