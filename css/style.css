@@ -1,0 +1,253 @@
+
+/* my own font definition */
+@font-face { 
+	font-family: Jenna Sue; 
+	src: url('../fonts/JennaSue-webfont.eot'); 
+	src: local("Jenna Sue"), url('../fonts/JennaSue-webfont.ttf'); 
+} 
+
+@font-face { 
+	font-family: News Cycle; 
+	src: url('../fonts/NewsCycle-Regular.eot'); 
+	src: local("News Cycle"), url('../fonts/NewsCycle-Regular.ttf'); 
+} 
+
+
+/* general style for the whole html */
+html { 
+	height: 100%;
+}
+
+* { 
+	margin: 0;
+	padding: 0;
+}
+
+/* tell the browser to render HTML 5 elements as block */
+article, aside, figure, footer, header, hgroup, nav, section { 
+	display:block;
+}
+
+body { 
+	font: normal .85em arial, sans-serif;
+	/*background: white;*/
+	background: #F0F8FF;
+	color: #444;
+	padding-bottom: 20px;
+}
+
+p { 
+	font: normal 1.3em "News Cycle", arial, sans-serif;
+	padding: 0 0 20px 0;
+	line-height: 1.5em;
+	text-shadow: #FFF 1px 1px ;
+}
+
+img { 
+	border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+	font: normal 400% 'Jenna Sue', arial, sans-serif;
+	color: #222;
+	margin: 0 0 15px 0;
+	padding: 15px 0 5px 0;
+}
+
+h1 { 
+	text-shadow: 1px 1px #FFF;
+}
+
+h2 { 
+	font: normal 200% "News Cycle", arial, sans-serif;
+	color: #222;  
+	margin: 0;
+	padding: 0 0 8px 0;
+	text-shadow: 1px 1px #FFF;
+}
+
+ul { 
+	margin: 2px 0 22px 17px;
+}
+
+ul li { 
+	font: normal 1.0em "News Cycle", arial, sans-serif;
+	list-style-type: circle;
+	margin: 0 0 0 0; 
+	padding: 0 0 4px 5px;
+}
+
+
+/* styling for ID main and site content */
+#main, header, nav, #site_content, footer { 
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+#main { 
+	width: 950px;
+	margin: 20px auto 0 auto;
+}
+
+#site_content { 
+	width: 950px;
+	overflow: hidden;
+	margin: 4px auto 0 auto;
+	padding: 0;
+	border-top: 0;
+	border-bottom: 0;
+} 
+
+
+/* styling for the slideshow on the top */
+ul.slideshow {
+	width: 950px;
+	height: 250px;
+	overflow: hidden;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+ul.slideshow li {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	right: 0;
+	list-style: none;
+}
+
+ul.slideshow li.show {
+	z-index: 500;
+}
+
+ul img {
+	border: none;
+}
+
+#slideshow-caption {
+	width: 950px;
+	height: 80px;
+	position: absolute;
+	bottom: 0;
+	left: 0; 
+	z-index: 500;
+}
+
+#slideshow-caption p {
+	padding: 38px 25px 0 25px;   
+	font: normal normal 100%, arial, sans-serif;
+	color: white;
+	text-align: center; 
+}
+
+
+/* styling for the navigation window */
+nav { 
+	height: 1px;
+	width: 600px;
+	font: normal 1.2em arial, sans-serif;
+	margin: 10px auto 0 auto;
+	float: left;
+	padding: 10px 10px 10px 0;
+} 
+
+nav a:link, a:visited { 
+	color: #000000;
+	text-decoration:underline;
+}
+
+nav a:hover, a:active { 
+	color:#3300FF; 
+	text-decoration:underline;
+	cursor:pointer
+}
+
+
+/* styling for the sidebar on the left */
+#sidebar_container { 
+	float: right;
+	width: 250px;
+	height: 450px;
+}
+
+.sidebar { 
+	float: right;
+	width: 200px;
+	padding: 20px 0px 0px 13px;
+}
+
+.sidebar h3 { 
+	padding: 0 0px 0px 0px;
+	font: 300% 'Jenna Sue', arial, sans-serif;
+	text-shadow:  #FFF 1px 1px;
+	margin: 0 1px;
+	color: #222;
+}
+
+.sidebar ul li{
+	float: left;
+}
+
+.sidebar a:hover, a:active { 
+	color:#3300FF; 
+	text-decoration:underline; 
+}
+
+#contact {
+	float: left;
+	width: 200px;
+	padding: 40px 0px 0px 75px;
+}
+
+#contact img {
+	width: 40px;
+	height: 40px;
+}
+
+/* styling for the content in the middle */
+.content {
+	text-align: justify;
+	width: 670px;
+	padding: 20px 0 5px 0;
+	margin: 0;
+	float: left;
+}
+
+.content ul, .sidebar ul {
+	margin: 2px 0 5px 0px;
+}
+
+.content ul li, .sidebar ul li {
+	list-style-type: none;
+	margin: 0 0 0 0; 
+	padding: 2px 0 2px 28px;
+	line-height: 1.5em;
+}
+
+.content a:link, a:visited {
+
+	text-decoration: none;
+}
+
+.content a:hover, a:active {
+	color:#3300FF; 
+	text-decoration:underline;
+}
+
+
+/* styling for the foot on the bottom */
+footer { 
+	width: 950px;
+	font: normal 100% 'News Cycle',  arial, sans-serif;
+	height: 20px;
+	padding: 20px 0 5px 0;
+	text-align: center; 
+	color: #222;
+	margin-top: 20px;
+}
+
+footer p { 
+	padding: 0 0 10px 0;
+}
